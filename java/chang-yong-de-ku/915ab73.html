@@ -19,21 +19,21 @@
   <meta name="author" content="Cryocore1225">
   <meta name="keywords" content="">
   
-    <meta name="description" content="布尔运算 1. 布尔类型基础 Java 的布尔类型只有两个值： 12truefalse 布尔运算是一类 关系运算（relational operations），主要用于逻辑判断与条件控制。  2. 比较运算符（Comparison Operators） 比较运算符用于比较数值，返回 boolean 类型：    运算符 说明     &gt; 大于   &gt;&#x3D; 大于等于   &lt; 小于">
+    <meta name="description" content="Java Math 常用函数  一、取值相关（最常用） 1️⃣ Math.abs(x) —— 绝对值 12Math.abs(-5);    &#x2F;&#x2F; 5Math.abs(3.2);   &#x2F;&#x2F; 3.2 常见用途：  比较浮点数 计算距离、误差   2️⃣ Math.max(a, b) &#x2F; Math.min(a, b) —— 最大 &#x2F; 最小 12Math.max(3, 7);   &#x2F;&#x2F; 7Math.min">
 <meta property="og:type" content="article">
-<meta property="og:title" content="布尔运算">
-<meta property="og:url" content="https://cryocore1225.github.io/java/j1/d9cb6954.html">
+<meta property="og:title" content="Math">
+<meta property="og:url" content="https://cryocore1225.github.io/java/chang-yong-de-ku/915ab73.html">
 <meta property="og:site_name" content="Port 25565">
-<meta property="og:description" content="布尔运算 1. 布尔类型基础 Java 的布尔类型只有两个值： 12truefalse 布尔运算是一类 关系运算（relational operations），主要用于逻辑判断与条件控制。  2. 比较运算符（Comparison Operators） 比较运算符用于比较数值，返回 boolean 类型：    运算符 说明     &gt; 大于   &gt;&#x3D; 大于等于   &lt; 小于">
+<meta property="og:description" content="Java Math 常用函数  一、取值相关（最常用） 1️⃣ Math.abs(x) —— 绝对值 12Math.abs(-5);    &#x2F;&#x2F; 5Math.abs(3.2);   &#x2F;&#x2F; 3.2 常见用途：  比较浮点数 计算距离、误差   2️⃣ Math.max(a, b) &#x2F; Math.min(a, b) —— 最大 &#x2F; 最小 12Math.max(3, 7);   &#x2F;&#x2F; 7Math.min">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-12-06T15:14:45.000Z">
-<meta property="article:modified_time" content="2025-12-06T22:11:12.636Z">
+<meta property="article:published_time" content="2025-12-14T23:31:34.000Z">
+<meta property="article:modified_time" content="2025-12-16T18:51:23.479Z">
 <meta property="article:author" content="Cryocore1225">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>布尔运算 - Port 25565</title>
+  <title>Math - Port 25565</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -211,7 +211,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle">布尔运算</span>
+            <span id="subtitle">Math</span>
           
         </div>
 
@@ -222,8 +222,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-12-06 23:14" pubdate>
-          2025年12月6日 晚上
+        <time datetime="2025-12-15 07:31" pubdate>
+          2025年12月15日 早上
         </time>
       </span>
     
@@ -234,7 +234,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          761 字
+          486 字
         
       </span>
     
@@ -245,7 +245,7 @@
         
         
         
-          7 分钟
+          5 分钟
         
       </span>
     
@@ -282,130 +282,125 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">布尔运算</h1>
+            <h1 id="seo-header">Math</h1>
             
             
               <div class="markdown-body">
                 
-                <h1>布尔运算</h1>
-<h2 id="1-布尔类型基础"><strong>1. 布尔类型基础</strong></h2>
-<p>Java 的布尔类型只有两个值：</p>
-<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs actionscript"><span class="hljs-literal">true</span><br><span class="hljs-literal">false</span><br></code></pre></td></tr></table></figure>
-<p>布尔运算是一类 <strong>关系运算（relational operations）</strong>，主要用于逻辑判断与条件控制。</p>
+                <h1>Java <code>Math</code> 常用函数</h1>
 <hr>
-<h2 id="2-比较运算符（Comparison-Operators）"><strong>2. 比较运算符（Comparison Operators）</strong></h2>
-<p>比较运算符用于比较数值，返回 <code>boolean</code> 类型：</p>
+<h2 id="一、取值相关（最常用）">一、取值相关（最常用）</h2>
+<h3 id="1️⃣-Math-abs-x-——-绝对值">1️⃣ <code>Math.abs(x)</code> —— 绝对值</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.abs(-<span class="hljs-number">5</span>);    <span class="hljs-comment">// 5</span><br>Math.abs(<span class="hljs-number">3.2</span>);   <span class="hljs-comment">// 3.2</span><br></code></pre></td></tr></table></figure>
+<p><strong>常见用途：</strong></p>
+<ul>
+<li>比较浮点数</li>
+<li>计算距离、误差</li>
+</ul>
+<hr>
+<h3 id="2️⃣-Math-max-a-b-Math-min-a-b-——-最大-最小">2️⃣ <code>Math.max(a, b)</code> / <code>Math.min(a, b)</code> —— 最大 / 最小</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.max(<span class="hljs-number">3</span>, <span class="hljs-number">7</span>);   <span class="hljs-comment">// 7</span><br>Math.min(<span class="hljs-number">3</span>, <span class="hljs-number">7</span>);   <span class="hljs-comment">// 3</span><br></code></pre></td></tr></table></figure>
+<p><strong>常见用途：</strong></p>
+<ul>
+<li>取上下限</li>
+<li>防止越界</li>
+</ul>
+<hr>
+<h2 id="二、四舍五入-取整（非常常见）">二、四舍五入 &amp; 取整（非常常见）</h2>
+<h3 id="3️⃣-Math-round-x-——-四舍五入">3️⃣ <code>Math.round(x)</code> —— 四舍五入</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.round(<span class="hljs-number">3.4</span>);   <span class="hljs-comment">// 3</span><br>Math.round(<span class="hljs-number">3.5</span>);   <span class="hljs-comment">// 4</span><br></code></pre></td></tr></table></figure>
+<p>⚠️ 返回类型是 <strong>int / long</strong></p>
+<hr>
+<h3 id="4️⃣-Math-floor-x-——-向下取整">4️⃣ <code>Math.floor(x)</code> —— 向下取整</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.floor(<span class="hljs-number">3.9</span>);   <span class="hljs-comment">// 3.0</span><br>Math.floor(-<span class="hljs-number">3.1</span>);  <span class="hljs-comment">// -4.0</span><br></code></pre></td></tr></table></figure>
+<p>📌 <strong>永远向更小的方向取整</strong></p>
+<hr>
+<h3 id="5️⃣-Math-ceil-x-——-向上取整">5️⃣ <code>Math.ceil(x)</code> —— 向上取整</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.ceil(<span class="hljs-number">3.1</span>);    <span class="hljs-comment">// 4.0</span><br>Math.ceil(-<span class="hljs-number">3.1</span>);   <span class="hljs-comment">// -3.0</span><br></code></pre></td></tr></table></figure>
+<p>📌 <strong>永远向更大的方向取整</strong></p>
+<hr>
+<h3 id="🔥-对比记忆">🔥 对比记忆</h3>
 <table>
 <thead>
 <tr>
-<th>运算符</th>
-<th>说明</th>
+<th>函数</th>
+<th>3.1</th>
+<th>-3.1</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>&gt;</code></td>
-<td>大于</td>
+<td>floor</td>
+<td>3</td>
+<td>-4</td>
 </tr>
 <tr>
-<td><code>&gt;=</code></td>
-<td>大于等于</td>
+<td>ceil</td>
+<td>4</td>
+<td>-3</td>
 </tr>
 <tr>
-<td><code>&lt;</code></td>
-<td>小于</td>
-</tr>
-<tr>
-<td><code>&lt;=</code></td>
-<td>小于等于</td>
-</tr>
-<tr>
-<td><code>==</code></td>
-<td>等于</td>
-</tr>
-<tr>
-<td><code>!=</code></td>
-<td>不等于</td>
-</tr>
-</tbody>
-</table>
-<p>示例：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">boolean</span> <span class="hljs-variable">isGreater</span> <span class="hljs-operator">=</span> <span class="hljs-number">5</span> &gt; <span class="hljs-number">3</span>; <span class="hljs-comment">// true</span><br><span class="hljs-type">int</span> <span class="hljs-variable">age</span> <span class="hljs-operator">=</span> <span class="hljs-number">12</span>;<br><span class="hljs-type">boolean</span> <span class="hljs-variable">isZero</span> <span class="hljs-operator">=</span> age == <span class="hljs-number">0</span>; <span class="hljs-comment">// false</span><br><span class="hljs-type">boolean</span> <span class="hljs-variable">isNonZero</span> <span class="hljs-operator">=</span> !isZero; <span class="hljs-comment">// true</span><br><span class="hljs-type">boolean</span> <span class="hljs-variable">isAdult</span> <span class="hljs-operator">=</span> age &gt;= <span class="hljs-number">18</span>; <span class="hljs-comment">// false</span><br><span class="hljs-type">boolean</span> <span class="hljs-variable">isTeenager</span> <span class="hljs-operator">=</span> age &gt; <span class="hljs-number">6</span> &amp;&amp; age &lt; <span class="hljs-number">18</span>; <span class="hljs-comment">// true</span><br></code></pre></td></tr></table></figure>
-<hr>
-<h2 id="3-逻辑运算符（Logical-Operators）"><strong>3. 逻辑运算符（Logical Operators）</strong></h2>
-<table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>名称</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&amp;&amp;</code></td>
-<td>与 AND</td>
-<td>两者都为 true 才为 true</td>
-</tr>
-<tr>
-<td>`</td>
-<td></td>
-<td>`</td>
-</tr>
-<tr>
-<td><code>!</code></td>
-<td>非 NOT</td>
-<td>true 变 false，false 变 true</td>
+<td>round</td>
+<td>3</td>
+<td>-3</td>
 </tr>
 </tbody>
 </table>
 <hr>
-<h2 id="4-运算优先级（从高到低）"><strong>4. 运算优先级（从高到低）</strong></h2>
-<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs asciidoc">!<br>&gt; &gt;= &lt; &lt;=<br><span class="hljs-section">== !=</span><br>&amp;&amp;<br>||<br></code></pre></td></tr></table></figure>
-<p>✦ 优先级不易记忆时，使用括号即可避免歧义。</p>
+<h2 id="三、指数-开方（算法中常见）">三、指数 &amp; 开方（算法中常见）</h2>
+<h3 id="6️⃣-Math-sqrt-x-——-开平方">6️⃣ <code>Math.sqrt(x)</code> —— 开平方</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.sqrt(<span class="hljs-number">9</span>);   <span class="hljs-comment">// 3.0</span><br></code></pre></td></tr></table></figure>
 <hr>
-<h2 id="5-短路运算（Short-circuit-Evaluation）"><strong>5. 短路运算（Short-circuit Evaluation）</strong></h2>
-<p>逻辑运算符 <code>&amp;&amp;</code> 和 <code>||</code> 都是 <strong>短路运算符</strong>。</p>
-<h3 id="5-1-AND（-）的短路特性"><strong>5.1 AND（&amp;&amp;）的短路特性</strong></h3>
-<figure class="highlight gml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gml"><span class="hljs-symbol">false</span> &amp;&amp; <span class="hljs-variable language_">x</span>  → 永远为 <span class="hljs-symbol">false</span><br></code></pre></td></tr></table></figure>
-<p>因此，当左边为 <code>false</code> 时，右边不会继续计算。</p>
-<p>示例：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">// 短路运算</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Main</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        <span class="hljs-type">boolean</span> <span class="hljs-variable">b</span> <span class="hljs-operator">=</span> <span class="hljs-number">5</span> &lt; <span class="hljs-number">3</span>;<br>        <span class="hljs-type">boolean</span> <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> b &amp;&amp; (<span class="hljs-number">5</span> / <span class="hljs-number">0</span> &gt; <span class="hljs-number">0</span>); <span class="hljs-comment">// 此处 5 / 0 不会报错</span><br>        System.out.println(result);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-<p>如果没有短路运算，<code>&amp;&amp;</code>后面的表达式会由于除数为<code>0</code>而报错，但实际上该语句并未报错，原因在于与运算是短路运算符，提前计算出了结果<code>false</code>。</p>
-<p>如果变量<code>b</code>的值为<code>true</code>，则表达式变为<code>true &amp;&amp; (5 / 0 &gt; 0)</code>。因为无法进行短路运算，该表达式必定会由于除数为<code>0</code>而报错，可以自行测试。</p>
-<p>类似的，对于<code>||</code>运算，只要能确定第一个值为<code>true</code>，后续计算也不再进行，而是直接返回<code>true</code>：</p>
+<h3 id="7️⃣-Math-pow-a-b-——-幂运算">7️⃣ <code>Math.pow(a, b)</code> —— 幂运算</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.pow(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>);    <span class="hljs-comment">// 8.0</span><br>Math.pow(<span class="hljs-number">9</span>, <span class="hljs-number">0.5</span>);  <span class="hljs-comment">// 3.0</span><br></code></pre></td></tr></table></figure>
+<p>📌 表示 <code>a^b</code></p>
 <hr>
-<h3 id="5-2-OR（-）的短路特性"><strong>5.2 OR（||）的短路特性</strong></h3>
-<figure class="highlight gml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gml"><span class="hljs-symbol">true</span> || <span class="hljs-variable language_">x</span> → 永远为 <span class="hljs-symbol">true</span><br></code></pre></td></tr></table></figure>
-<p>示例：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">boolean</span> <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> <span class="hljs-literal">true</span> || (<span class="hljs-number">5</span> / <span class="hljs-number">0</span> &gt; <span class="hljs-number">0</span>); <span class="hljs-comment">// true</span><br></code></pre></td></tr></table></figure>
-<p>右侧不会计算，因此不会报错。</p>
+<h2 id="四、随机数">四、随机数</h2>
+<h3 id="8️⃣-Math-random-——-随机数">8️⃣ <code>Math.random()</code> —— 随机数</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.random();   <span class="hljs-comment">// [0.0, 1.0)</span><br></code></pre></td></tr></table></figure>
+<h3 id="常见写法">常见写法</h3>
+<p>🎯 生成 <code>0 ~ 9</code>：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">(<span class="hljs-type">int</span>)(Math.random() * <span class="hljs-number">10</span>);<br></code></pre></td></tr></table></figure>
+<p>🎯 生成 <code>1 ~ 10</code>：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">(<span class="hljs-type">int</span>)(Math.random() * <span class="hljs-number">10</span>) + <span class="hljs-number">1</span>;<br></code></pre></td></tr></table></figure>
 <hr>
-<h2 id="6-三元运算符（b-x-y）"><strong>6. 三元运算符（b ? x : y）</strong></h2>
-<p>语法：</p>
-<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs jboss-cli">condition ? value_<span class="hljs-keyword">if</span>_<span class="hljs-literal">true</span> : value_<span class="hljs-keyword">if</span>_<span class="hljs-literal">false</span><br></code></pre></td></tr></table></figure>
-<p>示例：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">// 三元运算</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Main</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">n</span> <span class="hljs-operator">=</span> -<span class="hljs-number">100</span>;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">x</span> <span class="hljs-operator">=</span> n &gt;= <span class="hljs-number">0</span> ? n : -n;<br>        System.out.println(x);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-<p>上述语句的意思是，判断<code>n &gt;= 0</code>是否成立，如果为<code>true</code>，则返回<code>n</code>，否则返回<code>-n</code>。这实际上是一个求绝对值的表达式。</p>
-<p>注意到三元运算<code>b ? x : y</code>会首先计算<code>b</code>，如果<code>b</code>为<code>true</code>，则只计算<code>x</code>，否则，只计算<code>y</code>。此外，<code>x</code>和<code>y</code>的类型必须相同，因为返回值不是<code>boolean</code>，而是<code>x</code>和<code>y</code>之一。</p>
-<p>要点：</p>
+<h2 id="五、三角函数（了解即可）">五、三角函数（了解即可）</h2>
+<p>⚠️ <strong>角度单位是弧度（radian）</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.sin(x);<br>Math.cos(x);<br>Math.tan(x);<br></code></pre></td></tr></table></figure>
+<p>角度与弧度转换：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.toRadians(<span class="hljs-number">30</span>);      <span class="hljs-comment">// 角度 → 弧度</span><br>Math.toDegrees(Math.PI); <span class="hljs-comment">// 弧度 → 角度</span><br></code></pre></td></tr></table></figure>
+<hr>
+<h2 id="六、常量（很常用）">六、常量（很常用）</h2>
+<h3 id="9️⃣-Math-PI">9️⃣ <code>Math.PI</code></h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.PI;   <span class="hljs-comment">// 3.141592653589793</span><br></code></pre></td></tr></table></figure>
+<h3 id="🔟-Math-E">🔟 <code>Math.E</code></h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.E;    <span class="hljs-comment">// 2.718281828459045</span><br></code></pre></td></tr></table></figure>
+<hr>
+<h2 id="七、符号-比较（不常见但好用）">七、符号 &amp; 比较（不常见但好用）</h2>
+<h3 id="Math-signum-x-——-符号判断"><code>Math.signum(x)</code> —— 符号判断</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.signum(<span class="hljs-number">5</span>);    <span class="hljs-comment">// 1</span><br>Math.signum(-<span class="hljs-number">5</span>);   <span class="hljs-comment">// -1</span><br>Math.signum(<span class="hljs-number">0</span>);    <span class="hljs-comment">// 0</span><br></code></pre></td></tr></table></figure>
+<hr>
+<h2 id="八、实战中最常见的组合写法">八、实战中最常见的组合写法</h2>
+<h3 id="✔️-浮点数比较（避免直接用-）">✔️ 浮点数比较（避免直接用 ==）</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">if</span> (Math.abs(a - b) &lt; <span class="hljs-number">1e-6</span>) &#123;<br>    <span class="hljs-comment">// 认为 a 和 b 相等</span><br>&#125;<br></code></pre></td></tr></table></figure>
+<hr>
+<h3 id="✔️-限制数值范围">✔️ 限制数值范围</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">x = Math.max(<span class="hljs-number">0</span>, Math.min(x, <span class="hljs-number">100</span>));<br></code></pre></td></tr></table></figure>
+<p>👉 把 <code>x</code> 强制限制在 <code>0 ~ 100</code> 之间</p>
+<hr>
+<h2 id="九、一句话记忆版（重点）">九、一句话记忆版（重点）</h2>
 <ul>
-<li>先计算 <code>b</code>（条件表达式）</li>
-<li>若 <code>b</code> 为 true，则只计算 x</li>
-<li>若 <code>b</code> 为 false，则只计算 y</li>
-<li>x 和 y 必须是 <strong>相同类型</strong></li>
+<li>绝对值：<code>abs</code></li>
+<li>最大最小：<code>max / min</code></li>
+<li>取整：<code>floor / ceil / round</code></li>
+<li>幂与开方：<code>pow / sqrt</code></li>
+<li>随机数：<code>random</code></li>
+<li>常量：<code>PI / E</code></li>
 </ul>
 <hr>
-<h2 id="7-练习：判断是否是小学生（年龄：6～12-岁）"><strong>7. 练习：判断是否是小学生（年龄：6～12 岁）</strong></h2>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">// 布尔运算</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Main</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">age</span> <span class="hljs-operator">=</span> <span class="hljs-number">7</span>;<br>        <span class="hljs-comment">// primary student的定义: 6~12岁</span><br>        <span class="hljs-type">boolean</span> <span class="hljs-variable">isPrimaryStudent</span> <span class="hljs-operator">=</span> ???;<br>        System.out.println(isPrimaryStudent ? <span class="hljs-string">&quot;Yes&quot;</span> : <span class="hljs-string">&quot;No&quot;</span>);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-<hr>
-<h2 id="8-小结"><strong>8. 小结</strong></h2>
-<ul>
-<li>布尔运算包含比较运算、逻辑运算和三元运算。</li>
-<li><code>&amp;&amp;</code> 和 <code>||</code> 都是 <strong>短路运算符</strong>，可能会阻止后续表达式执行。</li>
-<li>三元运算符也是“短路运算”，只会计算其中一个表达式。</li>
-<li>三元运算中 <code>x</code> 和 <code>y</code> 的类型必须一致。</li>
-</ul>
+<blockquote>
+<p>建议：这份内容可以直接保存为 <strong><code>Java-Math.md</code></strong>，作为日常速查表。</p>
+</blockquote>
 
                 
               </div>
@@ -429,7 +424,7 @@
   
     <span>></span>
     
-  <a href="/categories/Java/j1/" class="category-chain-item">程序基础</a>
+  <a href="/categories/Java/%E5%B8%B8%E7%94%A8%E7%9A%84%E5%BA%93/" class="category-chain-item">常用的库</a>
   
   
 
@@ -451,8 +446,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>布尔运算</div>
-      <div>https://cryocore1225.github.io/java/j1/d9cb6954.html</div>
+      <div>Math</div>
+      <div>https://cryocore1225.github.io/java/chang-yong-de-ku/915ab73.html</div>
     </div>
     <div class="license-meta">
       
@@ -465,7 +460,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2025年12月7日</div>
+          <div>2025年12月17日</div>
         </div>
       
       
@@ -496,9 +491,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/java/j1/f4bcb891.html" title="浮点数运算">
+                      <a href="/java/shua-ti-bi-ji/d98ef1d2.html" title="两数之和">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">浮点数运算</span>
+                        <span class="hidden-mobile">两数之和</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -506,8 +501,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/java/j1/854d7208.html" title="数组类型">
-                        <span class="hidden-mobile">数组类型</span>
+                      <a href="/java/j1/fca4c6bf.html" title="字符和字符串">
+                        <span class="hidden-mobile">字符和字符串</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
