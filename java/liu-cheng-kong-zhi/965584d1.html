@@ -19,21 +19,21 @@
   <meta name="author" content="Cryocore1225">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Math 常用函数 一、取值相关（最常用） 1️⃣ Math.abs(x) —— 绝对值 12Math.abs(-5);    &#x2F;&#x2F; 5Math.abs(3.2);   &#x2F;&#x2F; 3.2 常见用途：  比较浮点数 计算距离、误差   2️⃣ Math.max(a, b) &#x2F; Math.min(a, b) —— 最大 &#x2F; 最小 12Math.max(3, 7);   &#x2F;&#x2F; 7Math.min(3, 7)">
+    <meta name="description" content="do while 循环（Java） 在 Java 中，while 循环是先判断条件，再执行循环体。 而 do while 循环 则不同，它是：  先执行一次循环体，再判断条件是否继续循环   一、do while 循环的基本语法 123do &#123;    执行循环语句&#125; while (条件表达式); 执行特点  循环体至少执行一次 执行完循环体后，再判断条件 条件为 true →">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Math库">
-<meta property="og:url" content="https://cryocore1225.github.io/java/library/51dd185c.html">
+<meta property="og:title" content="do...while循环">
+<meta property="og:url" content="https://cryocore1225.github.io/java/liu-cheng-kong-zhi/965584d1.html">
 <meta property="og:site_name" content="Port 25565">
-<meta property="og:description" content="Math 常用函数 一、取值相关（最常用） 1️⃣ Math.abs(x) —— 绝对值 12Math.abs(-5);    &#x2F;&#x2F; 5Math.abs(3.2);   &#x2F;&#x2F; 3.2 常见用途：  比较浮点数 计算距离、误差   2️⃣ Math.max(a, b) &#x2F; Math.min(a, b) —— 最大 &#x2F; 最小 12Math.max(3, 7);   &#x2F;&#x2F; 7Math.min(3, 7)">
+<meta property="og:description" content="do while 循环（Java） 在 Java 中，while 循环是先判断条件，再执行循环体。 而 do while 循环 则不同，它是：  先执行一次循环体，再判断条件是否继续循环   一、do while 循环的基本语法 123do &#123;    执行循环语句&#125; while (条件表达式); 执行特点  循环体至少执行一次 执行完循环体后，再判断条件 条件为 true →">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-12-14T23:31:34.000Z">
-<meta property="article:modified_time" content="2025-12-16T19:02:32.329Z">
+<meta property="article:published_time" content="2025-12-22T13:08:15.000Z">
+<meta property="article:modified_time" content="2025-12-22T16:28:39.193Z">
 <meta property="article:author" content="Cryocore1225">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Math库 - Port 25565</title>
+  <title>do...while循环 - Port 25565</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -211,7 +211,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle">Math库</span>
+            <span id="subtitle">do...while循环</span>
           
         </div>
 
@@ -222,8 +222,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-12-15 07:31" pubdate>
-          2025年12月15日 早上
+        <time datetime="2025-12-22 21:08" pubdate>
+          2025年12月22日 晚上
         </time>
       </span>
     
@@ -234,7 +234,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          461 字
+          440 字
         
       </span>
     
@@ -282,119 +282,99 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Math库</h1>
+            <h1 id="seo-header">do...while循环</h1>
             
             
               <div class="markdown-body">
                 
-                <h1><code>Math</code> 常用函数</h1>
-<h2 id="一、取值相关（最常用）">一、取值相关（最常用）</h2>
-<h3 id="1️⃣-Math-abs-x-——-绝对值">1️⃣ <code>Math.abs(x)</code> —— 绝对值</h3>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.abs(-<span class="hljs-number">5</span>);    <span class="hljs-comment">// 5</span><br>Math.abs(<span class="hljs-number">3.2</span>);   <span class="hljs-comment">// 3.2</span><br></code></pre></td></tr></table></figure>
-<p><strong>常见用途：</strong></p>
-<ul>
-<li>比较浮点数</li>
-<li>计算距离、误差</li>
-</ul>
+                <h1>do while 循环（Java）</h1>
+<p>在 Java 中，<code>while</code> 循环是<strong>先判断条件，再执行循环体</strong>。<br>
+而 <strong><code>do while</code> 循环</strong> 则不同，它是：</p>
+<blockquote>
+<p><strong>先执行一次循环体，再判断条件是否继续循环</strong></p>
+</blockquote>
 <hr>
-<h3 id="2️⃣-Math-max-a-b-Math-min-a-b-——-最大-最小">2️⃣ <code>Math.max(a, b)</code> / <code>Math.min(a, b)</code> —— 最大 / 最小</h3>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.max(<span class="hljs-number">3</span>, <span class="hljs-number">7</span>);   <span class="hljs-comment">// 7</span><br>Math.min(<span class="hljs-number">3</span>, <span class="hljs-number">7</span>);   <span class="hljs-comment">// 3</span><br></code></pre></td></tr></table></figure>
-<p><strong>常见用途：</strong></p>
-<ul>
-<li>取上下限</li>
-<li>防止越界</li>
-</ul>
+<h2 id="一、do-while-循环的基本语法">一、do while 循环的基本语法</h2>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">do</span> &#123;<br>    执行循环语句<br>&#125; <span class="hljs-keyword">while</span> (条件表达式);<br></code></pre></td></tr></table></figure>
+<h3 id="执行特点">执行特点</h3>
+<ol>
+<li><strong>循环体至少执行一次</strong></li>
+<li>执行完循环体后，再判断条件</li>
+<li>条件为 <code>true</code> → 继续循环</li>
+<li>条件为 <code>false</code> → 退出循环</li>
+</ol>
+<p>📌 注意：<br>
+<code>do while</code> 语句末尾<strong>必须有分号 <code>;</code></strong></p>
 <hr>
-<h2 id="二、四舍五入-取整（非常常见）">二、四舍五入 &amp; 取整（非常常见）</h2>
-<h3 id="3️⃣-Math-round-x-——-四舍五入">3️⃣ <code>Math.round(x)</code> —— 四舍五入</h3>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.round(<span class="hljs-number">3.4</span>);   <span class="hljs-comment">// 3</span><br>Math.round(<span class="hljs-number">3.5</span>);   <span class="hljs-comment">// 4</span><br></code></pre></td></tr></table></figure>
-<p>⚠️ 返回类型是 <strong>int / long</strong></p>
-<hr>
-<h3 id="4️⃣-Math-floor-x-——-向下取整">4️⃣ <code>Math.floor(x)</code> —— 向下取整</h3>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.floor(<span class="hljs-number">3.9</span>);   <span class="hljs-comment">// 3.0</span><br>Math.floor(-<span class="hljs-number">3.1</span>);  <span class="hljs-comment">// -4.0</span><br></code></pre></td></tr></table></figure>
-<p>📌 <strong>永远向更小的方向取整</strong></p>
-<hr>
-<h3 id="5️⃣-Math-ceil-x-——-向上取整">5️⃣ <code>Math.ceil(x)</code> —— 向上取整</h3>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.ceil(<span class="hljs-number">3.1</span>);    <span class="hljs-comment">// 4.0</span><br>Math.ceil(-<span class="hljs-number">3.1</span>);   <span class="hljs-comment">// -3.0</span><br></code></pre></td></tr></table></figure>
-<p>📌 <strong>永远向更大的方向取整</strong></p>
-<hr>
-<h3 id="🔥-对比记忆">🔥 对比记忆</h3>
+<h2 id="二、do-while-与-while-的区别">二、do while 与 while 的区别</h2>
 <table>
 <thead>
 <tr>
-<th>函数</th>
-<th>3.1</th>
-<th>-3.1</th>
+<th>对比项</th>
+<th>while</th>
+<th>do while</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>floor</td>
-<td>3</td>
-<td>-4</td>
+<td>判断条件</td>
+<td>先判断</td>
+<td>后判断</td>
 </tr>
 <tr>
-<td>ceil</td>
-<td>4</td>
-<td>-3</td>
+<td>是否至少执行一次</td>
+<td>不一定</td>
+<td>一定</td>
 </tr>
 <tr>
-<td>round</td>
-<td>3</td>
-<td>-3</td>
+<td>适用场景</td>
+<td>条件可能一开始就不成立</td>
+<td>至少要执行一次</td>
 </tr>
 </tbody>
 </table>
 <hr>
-<h2 id="三、指数-开方（算法中常见）">三、指数 &amp; 开方（算法中常见）</h2>
-<h3 id="6️⃣-Math-sqrt-x-——-开平方">6️⃣ <code>Math.sqrt(x)</code> —— 开平方</h3>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.sqrt(<span class="hljs-number">9</span>);   <span class="hljs-comment">// 3.0</span><br></code></pre></td></tr></table></figure>
-<hr>
-<h3 id="7️⃣-Math-pow-a-b-——-幂运算">7️⃣ <code>Math.pow(a, b)</code> —— 幂运算</h3>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.pow(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>);    <span class="hljs-comment">// 8.0</span><br>Math.pow(<span class="hljs-number">9</span>, <span class="hljs-number">0.5</span>);  <span class="hljs-comment">// 3.0</span><br></code></pre></td></tr></table></figure>
-<p>📌 表示 <code>a^b</code></p>
-<hr>
-<h2 id="四、随机数">四、随机数</h2>
-<h3 id="8️⃣-Math-random-——-随机数">8️⃣ <code>Math.random()</code> —— 随机数</h3>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.random();   <span class="hljs-comment">// [0.0, 1.0)</span><br></code></pre></td></tr></table></figure>
-<h3 id="常见写法">常见写法</h3>
-<p>🎯 生成 <code>0 ~ 9</code>：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">(<span class="hljs-type">int</span>)(Math.random() * <span class="hljs-number">10</span>);<br></code></pre></td></tr></table></figure>
-<p>🎯 生成 <code>1 ~ 10</code>：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">(<span class="hljs-type">int</span>)(Math.random() * <span class="hljs-number">10</span>) + <span class="hljs-number">1</span>;<br></code></pre></td></tr></table></figure>
-<hr>
-<h2 id="五、三角函数（了解即可）">五、三角函数（了解即可）</h2>
-<p>⚠️ <strong>角度单位是弧度（radian）</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.sin(x);<br>Math.cos(x);<br>Math.tan(x);<br></code></pre></td></tr></table></figure>
-<p>角度与弧度转换：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.toRadians(<span class="hljs-number">30</span>);      <span class="hljs-comment">// 角度 → 弧度</span><br>Math.toDegrees(Math.PI); <span class="hljs-comment">// 弧度 → 角度</span><br></code></pre></td></tr></table></figure>
-<hr>
-<h2 id="六、常量（很常用）">六、常量（很常用）</h2>
-<h3 id="9️⃣-Math-PI">9️⃣ <code>Math.PI</code></h3>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.PI;   <span class="hljs-comment">// 3.141592653589793</span><br></code></pre></td></tr></table></figure>
-<h3 id="🔟-Math-E">🔟 <code>Math.E</code></h3>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.E;    <span class="hljs-comment">// 2.718281828459045</span><br></code></pre></td></tr></table></figure>
-<hr>
-<h2 id="七、符号-比较（不常见但好用）">七、符号 &amp; 比较（不常见但好用）</h2>
-<h3 id="Math-signum-x-——-符号判断"><code>Math.signum(x)</code> —— 符号判断</h3>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java">Math.signum(<span class="hljs-number">5</span>);    <span class="hljs-comment">// 1</span><br>Math.signum(-<span class="hljs-number">5</span>);   <span class="hljs-comment">// -1</span><br>Math.signum(<span class="hljs-number">0</span>);    <span class="hljs-comment">// 0</span><br></code></pre></td></tr></table></figure>
-<hr>
-<h2 id="八、实战中最常见的组合写法">八、实战中最常见的组合写法</h2>
-<h3 id="✔️-浮点数比较（避免直接用-）">✔️ 浮点数比较（避免直接用 ==）</h3>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">if</span> (Math.abs(a - b) &lt; <span class="hljs-number">1e-6</span>) &#123;<br>    <span class="hljs-comment">// 认为 a 和 b 相等</span><br>&#125;<br></code></pre></td></tr></table></figure>
-<hr>
-<h3 id="✔️-限制数值范围">✔️ 限制数值范围</h3>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">x = Math.max(<span class="hljs-number">0</span>, Math.min(x, <span class="hljs-number">100</span>));<br></code></pre></td></tr></table></figure>
-<p>👉 把 <code>x</code> 强制限制在 <code>0 ~ 100</code> 之间</p>
-<hr>
-<h2 id="九、一句话记忆版">九、一句话记忆版</h2>
+<h2 id="三、示例：使用-do-while-计算-1-到-100-的和">三、示例：使用 do while 计算 1 到 100 的和</h2>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">// do-while</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Main</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">sum</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">n</span> <span class="hljs-operator">=</span> <span class="hljs-number">1</span>;<br>        <span class="hljs-keyword">do</span> &#123;<br>            sum = sum + n;<br>            n++;<br>        &#125; <span class="hljs-keyword">while</span> (n &lt;= <span class="hljs-number">100</span>);<br>        System.out.println(sum);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="执行说明">执行说明</h3>
 <ul>
-<li>绝对值：<code>abs</code></li>
-<li>最大最小：<code>max / min</code></li>
-<li>取整：<code>floor / ceil / round</code></li>
-<li>幂与开方：<code>pow / sqrt</code></li>
-<li>随机数：<code>random</code></li>
-<li>常量：<code>PI / E</code></li>
+<li>第一次进入循环时 <strong>不检查条件</strong></li>
+<li>循环体执行后，再判断 <code>n &lt;= 100</code></li>
+<li>当条件不满足时退出循环</li>
+</ul>
+<hr>
+<h2 id="四、使用-do-while-时的注意事项">四、使用 do while 时的注意事项</h2>
+<ul>
+<li>循环体一定会执行一次</li>
+<li>同样要注意：
+<ul>
+<li>循环条件是否正确</li>
+<li>循环变量是否会发生变化</li>
+<li>避免死循环</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="五、练习">五、练习</h2>
+<p>使用 <code>do while</code> 循环计算从 <strong>m 到 n</strong> 的和：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">// do while</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Main</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">sum</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">m</span> <span class="hljs-operator">=</span> <span class="hljs-number">20</span>;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">n</span> <span class="hljs-operator">=</span> <span class="hljs-number">100</span>;<br>        <span class="hljs-comment">// 使用do while计算 m + ... + n:</span><br>        <span class="hljs-keyword">do</span> &#123;<br>        &#125; <span class="hljs-keyword">while</span> (<span class="hljs-literal">false</span>);<br>        System.out.println(sum);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>👉 提示：</p>
+<ul>
+<li>初始化循环变量</li>
+<li>正确设置循环条件</li>
+<li>确保变量在循环中发生变化</li>
+</ul>
+<hr>
+<h2 id="六、小结">六、小结</h2>
+<ul>
+<li><code>do while</code> 循环 <strong>先执行，再判断</strong></li>
+<li>循环体<strong>至少执行一次</strong></li>
+<li>适用于：
+<ul>
+<li>必须先执行一次操作，再决定是否继续</li>
+</ul>
+</li>
+<li>与 <code>while</code> 循环配合使用，可以覆盖大多数循环场景</li>
 </ul>
 
                 
@@ -419,7 +399,7 @@
   
     <span>></span>
     
-  <a href="/categories/Java/Library/" class="category-chain-item">常用的库</a>
+  <a href="/categories/Java/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/" class="category-chain-item">流程控制</a>
   
   
 
@@ -441,8 +421,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Math库</div>
-      <div>https://cryocore1225.github.io/java/library/51dd185c.html</div>
+      <div>do...while循环</div>
+      <div>https://cryocore1225.github.io/java/liu-cheng-kong-zhi/965584d1.html</div>
     </div>
     <div class="license-meta">
       
@@ -455,7 +435,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2025年12月17日</div>
+          <div>2025年12月23日</div>
         </div>
       
       
@@ -486,9 +466,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/java/notes/d98ef1d2.html" title="两数之和">
+                      <a href="/java/liu-cheng-kong-zhi/3f209729.html" title="for循环">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">两数之和</span>
+                        <span class="hidden-mobile">for循环</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -496,8 +476,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/java/j1/fca4c6bf.html" title="字符和字符串">
-                        <span class="hidden-mobile">字符和字符串</span>
+                      <a href="/java/notes/d98ef1d2.html" title="两数之和">
+                        <span class="hidden-mobile">两数之和</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
